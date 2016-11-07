@@ -23,6 +23,19 @@ Goals for this website:
 
 1) We want to have potential customers be able to see preview photographs of their jewelry.  More specifically, when they fill out the custom ring form, we will use JavaScript to have the corresponding image of their ring show up on the screen. (For example, if they selected a silver ring with a red stone, then they will see it on the screen before confirming their purchase.)
 
+Timeline:
+
+Protoype 1 on November 7, meet on Google Hangouts
+
+Revised prototype by November 15 -- work to clean up HTML and CSS, meet on Google Hangouts to discuss
+
+Week of November 15-22 -- work on implementing Javascript, meet on Google Hangouts
+
+Final Prototype due December 6
+
+
+
+
 
 
 
