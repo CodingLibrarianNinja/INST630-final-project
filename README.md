@@ -29,13 +29,13 @@ Goals for this website:
 
 4) Customer will have an order confirmation directly e-mailed to them once they have finished shopping.
 
-Timeline:
+Project Timeline:
 
-Protoype 1 on November 7, meet on Google Hangouts
+Prototype 1 completed on November 7, met on Google Hangouts
 
-Revised prototype by November 15 -- work to clean up HTML and CSS, meet on Google Hangouts to discuss
+Revised prototype by November 15 -- work to clean up HTML, CSS, JS; meet on Google Hangouts to discuss
 
-Week of November 15-22 -- work on implementing Javascript, meet on Google Hangouts
+Week of November 15-22 -- focus on implementing Javascript, meet on Google Hangouts to work through any issues
 
 Final Prototype due December 6
 
