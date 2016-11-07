@@ -19,6 +19,20 @@ var shoppingCart = []; //Global Variable to show empty shopping cart for the cus
 //start with an empty array
 //Then as the customer adds items to the cart, then we will push that item to the array
 
+// draft of an object constructor for custom items, need to add method
+function customItem(size, wire, color) {
+    this.size = size;
+    this.wire = wire;
+    this.color = color;
+}
+
+// function for adding custom items to the cart
+function addToShoppingCart(customItem, quantity) {
+    for (var i = 0; i < quantity; i++) {
+         shoppingCart.push(customItem);
+    }
+}
+
 //Button as JavaScript will confirm the order and e-mail it to sparklingcreationsjewelry@gmail.com
 
 //storing variables for items that customer has added to cart and keeping them as the user continues to shop
