@@ -1,0 +1,54 @@
+/*INST630 Final Project-Stephani Moore/Rosie Yanosko-->
+ Sparkling Creations CSS page for website */
+
+
+/* Note to Rosie: The only definite things that I want is the h1/h2 elements-feel free to format as you want*/
+/*Also, I would like everything centered on the pages.*/
+
+
+head {
+
+}
+
+body { 
+    text-align: center;
+	font-family: "Lucida Handwriting", serif;
+    font-size: 18px;
+    background-color: #dabaef;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    
+}
+
+h1, h2 {
+	text-align: center;
+    font-family: "Lucida Handwriting", bold, serif;
+    font-size: 32px;
+	color: indigo;
+}
+
+a {
+    font-family: "Lucida Handwriting", serif;
+    font-size: 20px;
+}
+
+p {
+    margin-top: 25px;
+}
+
+input {
+    padding: 6px 8px; /* pads the text inside of the input box */
+    border: 2px solid indigo;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 150px; 
+    /* I'll find a better way to make the footer go to the bottom of the page */
+}
+
+#banner{
+    border: 10px solid indigo;
+    margin-bottom: 40px;
+  
+}

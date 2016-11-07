@@ -1,0 +1,36 @@
+INST630 Final Project-To Do List
+
+
+General
+
+1)Figuring out what to do with payment
+
+HTML
+
+1) Images-need to take pictures of the following rings:
+	-Blue Silver Ring
+	-Black Copper Ring
+	-Green Silver Ring
+	-Pearl Silver Ring
+	-Pink Copper Ring
+	-Purple Copper Ring
+	-Red Copper Ring
+2) Upload ring photos
+
+
+
+CSS
+
+1)formatting the form
+
+2)borders around photos
+
+3)formatting links-not making them look so bland
+
+
+
+JavaScript
+
+1) Need code for making different custom ring photos appear on that HTML page
+2) Need code for having a smaller screen pop up with the available pieces
+3) form submission script
