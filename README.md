@@ -23,6 +23,12 @@ Goals for this website:
 
 1) We want to have potential customers be able to see preview photographs of their jewelry.  More specifically, when they fill out the custom ring form, we will use JavaScript to have the corresponding image of their ring show up on the screen. (For example, if they selected a silver ring with a red stone, then they will see it on the screen before confirming their purchase.)
 
+2) Customers can add items to their cart which will stay in their cart unless they leave the website, delete them from the cart or confirm their order
+
+3) Customers can select between already made pieces of jewelry, the custom ring form, or purchase both already made pieces/custom ring(s). 
+
+4) Customer will have an order confirmation directly e-mailed to them once they have finished shopping.
+
 Timeline:
 
 Protoype 1 on November 7, meet on Google Hangouts
