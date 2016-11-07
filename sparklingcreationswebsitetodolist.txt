@@ -17,6 +17,8 @@ HTML
 	-Red Copper Ring
 2) Upload ring photos
 
+3) Jewelry photos not showing up on the Already made page...something wrong with the HTML code?  path name?
+
 
 
 CSS
@@ -27,7 +29,9 @@ CSS
 
 3)formatting links-not making them look so bland
 
+4) Lucida Handwriting font-not showing up in Rossie's brower-what is going on with that?
 
+5) More spacing in the text field descriptors in the custom ring jewelry form?
 
 JavaScript
 
