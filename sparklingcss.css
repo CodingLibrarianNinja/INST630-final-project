@@ -2,34 +2,26 @@
  Sparkling Creations CSS page for website */
 
 
-/* Note to Rosie: The only definite things that I want is the h1/h2 elements-feel free to format as you want*/
-/*Also, I would like everything centered on the pages.*/
-
-
-head {
-
-}
-
 body { 
     text-align: center;
-	font-family: "Lucida Handwriting", serif;
-    font-size: 18px;
+	font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
+    font-size: 22px;
     background-color: #dabaef;
     margin-top: 50px;
-    margin-bottom: 200px;
-    
+    width: 100%;
 }
 
 h1, h2 {
 	text-align: center;
-    font-family: "Lucida Handwriting", bold, serif;
-    font-size: 32px;
+    font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", bold, serif;
+    font-size: 35px;
 	color: indigo;
+    width: 100%;
 }
 
 a {
-    font-family: "Lucida Handwriting", serif;
-    font-size: 20px;
+    font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
+    font-size: 24px;
 }
 
 p {
@@ -37,14 +29,46 @@ p {
 }
 
 input {
-    padding: 6px 8px; /* pads the text inside of the input box */
+    padding: 6px 8px; 
     border: 2px solid indigo;
+    margin-left: 10px;
+    outline: none;
+    border-radius: 3px;
+}
+
+input[type=text]:focus {
+    border: 3px solid indigo;
+}
+
+textarea {
+    font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
+    font-size: 18px;
+    height: 110px;
+    width: 300px;
+    padding: 6px 8px;
+    border: 2px solid indigo;
+    border-radius: 6px;
+    resize: none;
+    outline: none;
+}
+
+input[type=submit], input[type=reset] {
+    font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
+    font-size: 20px;
+    background-color: indigo;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    margin: 4px 2px;
 }
 
 .footer{
     text-align: center;
-    margin-top: 150px; 
-    /* I'll find a better way to make the footer go to the bottom of the page */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
 }
 
 #banner{
@@ -54,5 +78,5 @@ input {
 }
 
 table{
-	border 2px solid indigo;
+	border: 2px solid indigo;
 }
