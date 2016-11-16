@@ -1,10 +1,9 @@
 /*INST630 Final Project-Stephani Moore/Rosie Yanosko-->
  Sparkling Creations CSS page for website */
 
-
 body { 
     text-align: center;
-	font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
+    font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
     font-size: 22px;
     background-color: #dabaef;
     margin-top: 50px;
@@ -12,10 +11,10 @@ body {
 }
 
 h1, h2 {
-	text-align: center;
+    text-align: center;
     font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", bold, serif;
     font-size: 35px;
-	color: indigo;
+    color: indigo;
     width: 100%;
 }
 
@@ -78,5 +77,5 @@ input[type=submit], input[type=reset] {
 }
 
 table{
-	border: 2px solid indigo;
+    border: 2px solid indigo;
 }
