@@ -21,10 +21,23 @@ h1, h2 {
 a {
     font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
     font-size: 24px;
+    text-decoration: none;
+    color: indigo;
+}
+
+/* visited link */
+a:visited {
+    color: #4c2172;
+}
+
+/* mouse over link */
+a:hover {
+    color: #843cb7;
 }
 
 p {
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 input {
@@ -61,6 +74,7 @@ input[type=submit], input[type=reset] {
     margin: 4px 2px;
 }
 
+/* need to find another way to make the footer stick to the bottom */
 .footer{
     text-align: center;
     position: fixed;
@@ -70,12 +84,16 @@ input[type=submit], input[type=reset] {
     height: 55px;
 }
 
-#banner{
+.photolinks {
     border: 2px solid indigo;
-    margin-bottom: 40px;
-  
 }
 
-table{
+#banner {
+    border: 2px solid indigo;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+table {
     border: 2px solid indigo;
 }

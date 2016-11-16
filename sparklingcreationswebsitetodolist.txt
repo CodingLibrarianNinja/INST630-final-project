@@ -23,14 +23,9 @@ CSS
 
 1)formatting the form
 
-2)borders around photos
+2)formatting links-not making them look so bland
 
-3)formatting links-not making them look so bland
-
-4) A minor thing that I saw is that for the banner on the homepage, you have to scroll slightly to the right to see all of it. 
-Could you please try and see if you can fit the banner on the homepage without having to scroll over by changing the CSS code?  
-I think you would use width = 100%, but you can confirm with W3C Schools or another website to be sure-thanks!
-
+3) need to find a better way to make the footer stick to the bottom of the page— do you want the shopping cart/homepage links to be included in the footer?
 
 
 JavaScript
