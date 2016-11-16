@@ -4,70 +4,154 @@
 var shoppingCart = []; //Global Variable to show empty shopping cart for the customer to put items in
 //Items will be added to this array as customers add them to the cart
 
-//cart icon at the top of each page so that the customer can click on it to see what they have in it so far.
+//Need function for adding premadejewelry to cart
 
-//Need code for having already made jewelry pieces pop out in smaller window-Photoviewer
-//Then they can add them to the cart if they want just on the window only?
-//How would we do that?
+function preMade(){
+	
+	
+}
 
-//Need code for having the person's custom ring photo to show up based
+//Need function for having the person's custom ring photo to show up based
 //on form's input Switch statement for different photos
+function ringChoice(){
+	
+	//Need to append it to the HTML nodeName
+	//Coral gave me the following code
+	/*
+	var elem = document.createElement("img");
+ elem.setAttribute("src", "images/img1.jpg");
+ elem.setAttribute("height", "300");
+ elem.setAttribute("width", "400");
+ elem.setAttribute("alt", "Purple stone");
+ document.getElementById("placehere").appendChild(elem);
+
+*/
 
 //I am certain that my syntax is wrong, but I need 14 results for each of the ring color combinations
 //I am basically writing everything out in pseudocode at the moment
 switch(customRing){  case "copperwire/purplestone"  //it will display on the sparklingringphoto.html page  
         //What command would I use to do that?  
-        display  picture Copper Wire Ring/Purple Stone;  
+        display  <img src="purplecopperwirering.jpg">;  
         break;  
     case "copperwire/redstone"  
-        display picture Copper Wire Ring/Red Stone  
+        display <img src="redcopperwirering.jpg">;
         break;  
     case "copperring/bluestone"  
-        display picture Copper Wire Ring/Blue Stone  
+        display <img src="bluecopperwirering.jpg">; 
         break;  
     case "copperring/blackstone"  
-        display picture Copper Wire Ring/Black Stone  
+        display <img src="blackcopperwirering.jpg">;
         break;  
     case "copperring/pinkstone"  
-        display picture Copper Wire Ring/Pink Stone  
+        display <img src="pinkcopperwirering.jpg">; 
         break;  
     case "copperring/greenstone"  
-        display picture Copper Wire Ring/Green Stone  
-        break;  
+        display <img src="greencopperwirering.jpg">;  
+        break;
+	case "copperring/whitepearl"
+		display <img src="pearlcopperwirering.jpg">;
     case "silverwire/purplestone"    
-        display  picture Silver Wire Ring/Purple Stone  
+        display <img src="purplesilverwirering.jpg">;  
         break;  
     case "silverwire/redstone"  
-        display picture Silver Wire Ring/Red Stone
+        display <img src="redsilverwirering.jpg">;
         break;  
     case "silverring/bluestone"  
-        display picture Silver Wire Ring/Blue Stone  
+        display <img src="bluesilverwirering.jpg">; 
         break;  
     case "silverring/blackstone"  
-        display picture Silver Wire Ring/Black Stone  
+        display <img src="blacksilverwirering.jpg">;  
         break;  
     case "silverring/pinkstone"  
-        display picture Silver Wire Ring/Pink Stone  
+        display <img src="pinksilverwirering.jpg">;  
         break;  
     case "silverring/greenstone"  
-        display picture Silver Wire Ring/Green Stone  
-        break;  
+        display <img src="greensilverwirering.jpg">; 
+        break;
+	case "silverring/whitepearl"
+		display <img src="pearlsilverwirering.jpg">;  
     default  
         break;        
                  }
    }
 
-//Also, if/else statement for custom ring page
-//if the user likes their ring, then they will go to the order confirmation page.
-//else they will be returned to the form
+//Function for pulling Parameters from form GET request
+//copied this function from Madlibs-similar concept I think...
 
-//The below code is pseudocode
-    if(customer clicks on confirm){
-        the next step will be that they go to the order confirmation page-link to the order confirmation HTML page
-    }else{
-        the customer will be returned to the custom form to redo it-link to the custom form HTML page
+/*function GetURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split("&");
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split("=");
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
     }
+}*/
 
+//Function for displaying form information from user
+
+function userInfo(){
+	var firstName = GetURLParameter("FirstName");
+	 
+	  document.getElementById("FirstName").textContent = firstName;
+	
+	var lastName = GetURLParameter("LastName");
+	 
+	  document.getElementById("LastName").textContent = lastName;
+	
+	var streetAddress = GetURLParameter("StreetAddress");
+	 
+	  document.getElementById("StreetAddress").textContent = streetAddress;
+	
+	var city = GetURLParameter("City");
+	 
+	  document.getElementById("City").textContent = city;
+	
+	var state = GetURLParameter("State");
+	 
+	  document.getElementById("State").textContent = state;
+	
+	var zipCode = GetURLParameter("ZipCode");
+	 
+	  document.getElementById("ZipCode").textContent = zipCode;
+  
+	var country = GetURLParameter("Country");
+	 
+	  document.getElementById("Country").textContent = country;
+  
+	var email = GetURLParameter("Email");
+	 
+	  document.getElementById("Email").textContent = email;
+  
+	var ringSize = GetURLParameter("RingSize");
+	 
+	  document.getElementById("RingSize").textContent = ringSize;
+ 
+  //Ring Wire: <!--Not sure how to add it-->
+  
+  //Swarovski Crystal Color:<!--Not Sure how to add it-->
+  
+  //Shipping/Payment Information <!--Not Sure how to add it-->
+  
+  //Preferred Delivery Method:<!--Not Sure how to add it-->
+  
+  //Payment Method:<!--Not Sure how to add it-->
+  
+  var additionalInfo = GetURLParameter("AdditionalInfo");
+	 
+	  document.getElementById("AdditionalInfo").textContent = additionalInfo;
+  
+	
+}
+
+//Function for validating form
+
+function validateForm(){
+	
+}
 
 // draft of an object constructor for custom items, need to add method
 function customItem(size, wire, color) {
