@@ -17,8 +17,6 @@ HTML
 	-Red Copper Ring
 2) Upload ring photos
 
-3) Jewelry photos not showing up on the Already made page...something wrong with the HTML code?  path name?
-
 
 
 CSS
@@ -29,12 +27,15 @@ CSS
 
 3)formatting links-not making them look so bland
 
-4) Lucida Handwriting font-not showing up in Rossie's brower-what is going on with that?
+4) A minor thing that I saw is that for the banner on the homepage, you have to scroll slightly to the right to see all of it. 
+Could you please try and see if you can fit the banner on the homepage without having to scroll over by changing the CSS code?  
+I think you would use width = 100%, but you can confirm with W3C Schools or another website to be sure-thanks!
 
-5) More spacing in the text field descriptors in the custom ring jewelry form?
+
 
 JavaScript
 
 1) Need code for making different custom ring photos appear on that HTML page
-2) Need code for having a smaller screen pop up with the available pieces
-3) form submission script
+2) Have button on Available Pieces page that adds an item to the cart
+3) form submission script-making information go to the order confirmation page
+4) Validating form information
