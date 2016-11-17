@@ -6,10 +6,17 @@ var shoppingCart = []; //Global Variable to show empty shopping cart for the cus
 
 //Need function for adding premadejewelry to cart
 
-function preMade(){
-	
+function preMade(name, price, quantity){
+	this.name = name;
+    this.price = price
+    this.quantity = quantity;
+    
+    //add method
 	
 }
+
+var aquaPreMade = new preMade('Aqua Cane Glass Earrings', 15, 1);
+
 
 //Need function for having the person's custom ring photo to show up based
 //on form's input Switch statement for different photos
