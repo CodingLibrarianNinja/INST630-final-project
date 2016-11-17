@@ -6,34 +6,30 @@ var shoppingCart = []; //Global Variable to show empty shopping cart for the cus
 
 //Need function for adding premadejewelry to cart
 
-function preMade(name, price, quantity){
+function preMade(name, price) {
 	this.name = name;
-    this.price = price
-    this.quantity = quantity;
-    
-    //add method
-	
+    this.price = price	
 }
 
-var aquaPreMade = new preMade('Aqua Cane Glass Earrings', 15, 1);
+var aquaPreMade = new preMade('Aqua Cane Glass Earrings', 15);
 
-var bluestripedPreMade = new preMade('Blue Striped Beaded Necklace', 40, 1);
+var bluestripedPreMade = new preMade('Blue Striped Beaded Necklace', 40);
 
-var bluezirconPreMade = new preMade('Blue Zircon Wire Wrapped Bracelet', 25, 1);
+var bluezirconPreMade = new preMade('Blue Zircon Wire Wrapped Bracelet', 25);
 
-var fireopalPreMade = new preMade('Fire Opal Silver Heart Pendant', 30, 1);
+var fireopalPreMade = new preMade('Fire Opal Silver Heart Pendant', 30);
 
-var nighttreePreMade = new preMade('Night Tree of Life Pendant', 35, 1);
+var nighttreePreMade = new preMade('Night Tree of Life Pendant', 35);
 
-var crystalheartPreMade = new preMade('Purple Swarovski Crystal Heart Earrings', 15, 1);
+var crystalheartPreMade = new preMade('Purple Swarovski Crystal Heart Earrings', 15);
 
-var redcoralPreMade = new preMade('Red and Pink Coral Beaded Necklace', 45, 1);
+var redcoralPreMade = new preMade('Red and Pink Coral Beaded Necklace', 45);
 
-var summertreePreMade = new preMade('Summer Tree of Life Pendant', 35, 1);
+var summertreePreMade = new preMade('Summer Tree of Life Pendant', 35);
 
-var treeagatePreMade = new preMade('Tree Agate Gemstone Earrings with Green Swarovski Crystals', 18, 1);
+var treeagatePreMade = new preMade('Tree Agate Gemstone Earrings with Green Swarovski Crystals', 18);
 
-var wintertreePremade = new preMade('Winter Tree of Life Pendant', 35, 1);
+var wintertreePremade = new preMade('Winter Tree of Life Pendant', 35);
 
 
 //Need function for having the person's custom ring photo to show up based
@@ -178,14 +174,12 @@ function validateForm(){
 	
 }
 
-// draft of an object constructor for custom items, need to add method
+// draft of an object constructor for custom items
 function customItem(size, wire, color) {
     this.size = size;
     this.wire = wire;
     this.color = color;
 }
-
-//Method for custom items
 
 // function for adding custom items to the cart
 //storing variables for items that customer has added to cart-keeping them as they continue to shop
