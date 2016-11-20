@@ -1,4 +1,4 @@
-INST630 Final Project-To Do List
+﻿INST630 Final Project-To Do List
 
 
 General
@@ -7,7 +7,7 @@ General
 
 HTML
 
-1) Images-need to take pictures of the following rings:
+1) Images-need to take pictures of the following rings:-DONE
 	-Blue Silver Ring
 	-Black Copper Ring
 	-Green Silver Ring
@@ -15,15 +15,17 @@ HTML
 	-Pink Copper Ring
 	-Purple Copper Ring
 	-Red Copper Ring
-2) Upload ring photos
+2) Upload ring photos-DONE
 
-3) change form to click on just ONE button, not all of them
-
+3) change form to click on just ONE button, not all of them-DONE
 4)change Zip Code and Ring Size input to text
 
-5) button id-add to HTML file and create variable similar to the Aqua earrings ones in JS file for rest of premade objects
+-DONE 
+5) button id-add to HTML file and create variable similar to the Aqua earrings ones in JS file for rest of premade objects-DONE
 
-6) editing the buttons on Premade HTML file so that when you click on "Add to Cart" it takes you to the cart page
+
+6) editing the buttons on Premade HTML file so that when you click on "Add to Cart" it takes you to the cart page with item information
+
 
 
 CSS
@@ -32,15 +34,21 @@ CSS
 
 2)need to find a better way to make the footer stick to the bottom of the page— do you want the shopping cart/homepage links to be included in the footer?
 
+3) Formatting the table-add borders
+4)Make drop down boxes on the menu bigger
 
 JavaScript
 
 1) Need code for making different custom ring photos appear on that HTML page
-2) Have button on Available Pieces page that adds an item to the cart
+2) Have button on Available Pieces page that adds an item to the cart with corresponding object information on it- Add Element by Node
+(want to add a line for each item added to the cart with the information for the item.)
 3) form submission script-making information go to the order confirmation page
-4) Validating form information — Rosie!
+4) Validating form information — Rosie
+
+
 
 Questions for Coral
+
 
 1) Incorporate responsive design?
 2) methods in constructor functions for remade items and custom items
