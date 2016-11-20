@@ -48,49 +48,68 @@ function ringChoice(){
 
 */
 
-//I am certain that my syntax is wrong, but I need 14 results for each of the ring color combinations
-//I am basically writing everything out in pseudocode at the moment
-switch(customRing){  case "copperwire/purplestone"  //it will display on the sparklingringphoto.html page  
-        //What command would I use to do that?  
+//I want to declare variables using values from the custom ring form
+
+	var ringWire = "Ring Wire"; //declaring Ring Wire variable
+	var crystalColor = "Crystal Color"; //declaring Crystal Color variable
+
+switch(ringWire,crystalColor){  
+
+	case ringWire = "Copper" && crystalColor = "Purple"
         display  <img src="purplecopperwirering.jpg">;  
         break;  
-    case "copperwire/redstone"  
+		
+    case ringWire = "Copper" && crystalColor = "Red"  
         display <img src="redcopperwirering.jpg">;
         break;  
-    case "copperring/bluestone"  
+		
+    case ringWire = "Copper" && crystalColor = "Blue"  
         display <img src="bluecopperwirering.jpg">; 
         break;  
-    case "copperring/blackstone"  
+		
+    case ringWire = "Copper" && crystalColor = "Black"  
         display <img src="blackcopperwirering.jpg">;
         break;  
-    case "copperring/pinkstone"  
+		
+    case ringWire = "Copper" && crystalColor = "Pink" 
         display <img src="pinkcopperwirering.jpg">; 
-        break;  
-    case "copperring/greenstone"  
+        break;
+		  
+    case ringWire = "Copper" && crystalColor = "Green"  
         display <img src="greencopperwirering.jpg">;  
         break;
-	case "copperring/whitepearl"
+		
+	case ringWire = "Copper" && crystalColor = "WhitePearl"
 		display <img src="pearlcopperwirering.jpg">;
-    case "silverwire/purplestone"    
+		break;
+		
+    case ringWire = "Silver" && crystalColor = "Purple"    
         display <img src="purplesilverwirering.jpg">;  
         break;  
-    case "silverwire/redstone"  
+		
+    case ringWire = "Silver" && crystalColor = "Red"  
         display <img src="redsilverwirering.jpg">;
         break;  
-    case "silverring/bluestone"  
+		
+    case ringWire = "Silver" && crystalColor = "Blue"  
         display <img src="bluesilverwirering.jpg">; 
         break;  
-    case "silverring/blackstone"  
+		
+    case ringWire = "Silver" && crystalColor = "Black"  
         display <img src="blacksilverwirering.jpg">;  
         break;  
-    case "silverring/pinkstone"  
+		
+    case ringWire = "Silver" && crystalColor = "Pink"  
         display <img src="pinksilverwirering.jpg">;  
         break;  
-    case "silverring/greenstone"  
+		
+    case ringWire = "Silver" && crystalColor = "Green"  
         display <img src="greensilverwirering.jpg">; 
         break;
-	case "silverring/whitepearl"
+		
+	case ringWire = "Silver" && crystalColor = "WhitePearl"
 		display <img src="pearlsilverwirering.jpg">;  
+		
     default  
         break;        
                  }
@@ -99,7 +118,7 @@ switch(customRing){  case "copperwire/purplestone"  //it will display on the
 //Function for pulling Parameters from form GET request
 //copied this function from Madlibs-similar concept I think...
 
-/*function GetURLParameter(sParam) {
+function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split("&");
     for (var i = 0; i < sURLVariables.length; i++)
@@ -110,7 +129,7 @@ switch(customRing){  case "copperwire/purplestone"  //it will display on the
             return sParameterName[1];
         }
     }
-}*/
+}
 
 //Function for displaying form information from user
 
