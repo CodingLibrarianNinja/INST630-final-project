@@ -31,6 +31,10 @@ var treeagatePreMade = new preMade('Tree Agate Gemstone Earrings with Green Swar
 
 var wintertreePremade = new preMade('Winter Tree of Life Pendant', 35);
 
+var copperRing = new preMade("Custom Copper Wire Ring",15);
+
+var silverRing = new preMade("Custom Silver Wire Ring",25);
+
 
 //Need function for having the person's custom ring photo to show up based
 //on form's input Switch statement for different photos
@@ -49,74 +53,76 @@ function ringChoice(){
 */
 
 //I want to declare variables using values from the custom ring form
-
-	var ringWire = "Ring Wire"; //declaring Ring Wire variable
+/*
+	var ringWire = document.getElementById("Ring Wire"); //declaring Ring Wire variable
 	var crystalColor = "Crystal Color"; //declaring Crystal Color variable
 
 switch(ringWire,crystalColor){  
 
-	case ringWire = "Copper" && crystalColor = "Purple"
+	case ringWire === "Copper" && crystalColor === "Purple"
         display  <img src="purplecopperwirering.jpg">;  
         break;  
 		
-    case ringWire = "Copper" && crystalColor = "Red"  
+    case ringWire === "Copper" && crystalColor === "Red"  
         display <img src="redcopperwirering.jpg">;
         break;  
 		
-    case ringWire = "Copper" && crystalColor = "Blue"  
+    case ringWire === "Copper" && crystalColor === "Blue"  
         display <img src="bluecopperwirering.jpg">; 
         break;  
 		
-    case ringWire = "Copper" && crystalColor = "Black"  
+    case ringWire === "Copper" && crystalColor === "Black"  
         display <img src="blackcopperwirering.jpg">;
         break;  
 		
-    case ringWire = "Copper" && crystalColor = "Pink" 
+    case ringWire == "Copper" && crystalColor === "Pink" 
         display <img src="pinkcopperwirering.jpg">; 
         break;
 		  
-    case ringWire = "Copper" && crystalColor = "Green"  
+    case ringWire === "Copper" && crystalColor === "Green"  
         display <img src="greencopperwirering.jpg">;  
         break;
 		
-	case ringWire = "Copper" && crystalColor = "WhitePearl"
+	case ringWire === "Copper" && crystalColor === "WhitePearl"
 		display <img src="pearlcopperwirering.jpg">;
 		break;
 		
-    case ringWire = "Silver" && crystalColor = "Purple"    
+    case ringWire === "Silver" && crystalColor === "Purple"    
         display <img src="purplesilverwirering.jpg">;  
         break;  
 		
-    case ringWire = "Silver" && crystalColor = "Red"  
+    case ringWire === "Silver" && crystalColor === "Red"  
         display <img src="redsilverwirering.jpg">;
         break;  
 		
-    case ringWire = "Silver" && crystalColor = "Blue"  
+    case ringWire === "Silver" && crystalColor === "Blue"  
         display <img src="bluesilverwirering.jpg">; 
         break;  
 		
-    case ringWire = "Silver" && crystalColor = "Black"  
+    case ringWire === "Silver" && crystalColor === "Black"  
         display <img src="blacksilverwirering.jpg">;  
         break;  
 		
-    case ringWire = "Silver" && crystalColor = "Pink"  
+    case ringWire === "Silver" && crystalColor === "Pink"  
         display <img src="pinksilverwirering.jpg">;  
         break;  
 		
-    case ringWire = "Silver" && crystalColor = "Green"  
+    case ringWire === "Silver" && crystalColor === "Green"  
         display <img src="greensilverwirering.jpg">; 
         break;
 		
-	case ringWire = "Silver" && crystalColor = "WhitePearl"
+	case ringWire === "Silver" && crystalColor === "WhitePearl"
 		display <img src="pearlsilverwirering.jpg">;  
 		
     default  
         break;        
                  }
+				 
+				 */
    }
+   //ringChoice();
 
 //Function for pulling Parameters from form GET request
-//copied this function from Madlibs-similar concept I think...
 
 function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
@@ -126,17 +132,18 @@ function GetURLParameter(sParam) {
         var sParameterName = sURLVariables[i].split("=");
         if (sParameterName[0] == sParam)
         {
-            return sParameterName[1];
+            return sParameterName[1].replace("+", " ");
         }
     }
 }
+
 
 //Function for displaying form information from user
 
 function userInfo(){
 	var firstName = GetURLParameter("FirstName");
 	 
-	  document.getElementById("FirstName").textContent = firstName;
+	 document.getElementById("FirstName").textContent = firstName;
 	
 	var lastName = GetURLParameter("LastName");
 	 
@@ -172,20 +179,36 @@ function userInfo(){
  
   //Ring Wire: <!--Not sure how to add it-->
   
-  //Swarovski Crystal Color:<!--Not Sure how to add it-->
+	var ringWire = GetURLParameter("RingWire");
+		
+		document.getElementById("RingWire").textContent = ringWire;
   
-  //Shipping/Payment Information <!--Not Sure how to add it-->
+  //Swarovski Crystal Color:<!--Not Sure how to add it-->
+	
+	var crystalColor = GetURLParameter("CrystalColor");
+	
+		document.getElementById("CrystalColor").textContent = crystalColor;
   
   //Preferred Delivery Method:<!--Not Sure how to add it-->
   
+	var deliveryMethod = GetURLParameter("DeliveryMethod");
+	
+		document.getElementById("DeliveryMethod").textContent = deliveryMethod;
+  
   //Payment Method:<!--Not Sure how to add it-->
   
-  var additionalInfo = GetURLParameter("AdditionalInfo");
+	var paymentMethod = GetURLParameter("PaymentMethod");
+	
+		document.getElementById("PaymentMethod").textContent = paymentMethod;
+  
+	var additionalInfo = GetURLParameter("AdditionalInfo");
 	 
 	  document.getElementById("AdditionalInfo").textContent = additionalInfo;
   
 	
 }
+
+userInfo();
 
 //Function for validating form
 
