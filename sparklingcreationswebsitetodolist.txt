@@ -51,4 +51,3 @@ Questions for Coral
 
 
 1) Incorporate responsive design?
-2) methods in constructor functions for remade items and custom items
