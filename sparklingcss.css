@@ -21,7 +21,7 @@ h1, h2 {
 a {
     font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
     font-size: 24px;
-    text-decoration: none;
+    text-decoration: none; 
     color: indigo;
 }
 
@@ -43,13 +43,23 @@ p {
 input {
     padding: 6px 8px; 
     border: 2px solid indigo;
-    margin-left: 10px;
+    margin-left: 6px;
     outline: none;
     border-radius: 3px;
 }
 
 input[type=text]:focus {
     border: 3px solid indigo;
+}
+
+.dropDown {
+    font-size: 18px;
+    font-family: "Lucida Handwriting", "Monotype Corsiva", "Apple Chancery", serif;
+    width: 155px;
+    margin-left: 6px;
+    padding: 6px 8px;
+    outline: none;
+    border: 2px solid indigo;
 }
 
 textarea {
@@ -75,6 +85,7 @@ input[type=submit], input[type=reset] {
 }
 
 .footer{
+    margin-top: 100px;
     text-align: center;
 }
 
