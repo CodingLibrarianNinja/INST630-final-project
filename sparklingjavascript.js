@@ -69,59 +69,59 @@ function ringChoice(){
 switch(ringWire,crystalColor){  
 
 	case ringWire === "Copper" && crystalColor === "Purple"
-        display  <img src="purplecopperwirering.jpg">;  
+	    document.getElementById("ringPhoto").src = "purplecopperwirering.jpg";
         break;  
 		
-    case ringWire === "Copper" && crystalColor === "Red"  
-        display <img src="redcopperwirering.jpg">;
+    case ringWire === "Copper" && crystalColor === "Red"
+	    document.getElementById("ringPhoto").src = "redcopperwirering.jpg";
         break;  
 		
-    case ringWire === "Copper" && crystalColor === "Blue"  
-        display <img src="bluecopperwirering.jpg">; 
+    case ringWire === "Copper" && crystalColor === "Blue"
+	    document.getElementById("ringPhoto").src = "bluecopperwirering.jpg";  
         break;  
 		
-    case ringWire === "Copper" && crystalColor === "Black"  
-        display <img src="blackcopperwirering.jpg">;
+    case ringWire === "Copper" && crystalColor === "Black"
+	    document.getElementById("ringPhoto").src = "blackcopperwirering.jpg";  
         break;  
 		
-    case ringWire == "Copper" && crystalColor === "Pink" 
-        display <img src="pinkcopperwirering.jpg">; 
+    case ringWire == "Copper" && crystalColor === "Pink"
+	    document.getElementById("ringPhoto").src = "pinkcopperwirering.jpg";
         break;
 		  
-    case ringWire === "Copper" && crystalColor === "Green"  
-        display <img src="greencopperwirering.jpg">;  
+    case ringWire === "Copper" && crystalColor === "Green"
+	    document.getElementById("ringPhoto").src = "greencopperwirering.jpg";  
         break;
 		
 	case ringWire === "Copper" && crystalColor === "WhitePearl"
-		display <img src="pearlcopperwirering.jpg">;
+	    document.getElementById("ringPhoto").src = "pearlcopperwirering.jpg";
 		break;
 		
     case ringWire === "Silver" && crystalColor === "Purple"    
-        display <img src="purplesilverwirering.jpg">;  
+        document.getElementById("ringPhoto").src = "purplesilverwirering.jpg";  
         break;  
 		
-    case ringWire === "Silver" && crystalColor === "Red"  
-        display <img src="redsilverwirering.jpg">;
+    case ringWire === "Silver" && crystalColor === "Red" 
+	    document.getElementById("ringPhoto").src = "redsilverwirering.jpg"; 
         break;  
 		
-    case ringWire === "Silver" && crystalColor === "Blue"  
-        display <img src="bluesilverwirering.jpg">; 
+    case ringWire === "Silver" && crystalColor === "Blue"
+	    document.getElementById("ringPhoto").src = "bluesilverwirering.jpg";  
         break;  
 		
-    case ringWire === "Silver" && crystalColor === "Black"  
-        display <img src="blacksilverwirering.jpg">;  
+    case ringWire === "Silver" && crystalColor === "Black"
+	    document.getElementById("ringPhoto").src = "blacksilverwirering.jpg";   
         break;  
 		
     case ringWire === "Silver" && crystalColor === "Pink"  
-        display <img src="pinksilverwirering.jpg">;  
+	    document.getElementById("ringPhoto").src = "pinksilverwirering.jpg"; 
         break;  
 		
     case ringWire === "Silver" && crystalColor === "Green"  
-        display <img src="greensilverwirering.jpg">; 
+        document.getElementById("ringPhoto").src = "greensilverwirering.jpg";
         break;
 		
 	case ringWire === "Silver" && crystalColor === "WhitePearl"
-		display <img src="pearlsilverwirering.jpg">;  
+		document.getElementById("ringPhoto").src = "pearlsilverwirering.jpg";  
 		
     default  
         break;        
