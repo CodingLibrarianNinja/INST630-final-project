@@ -1,6 +1,5 @@
 //INST630 Final Project-Stephani Moore/Rosie Yanosko
 //Sparkling Creations JavaScript Page
-
 var shoppingCart = []; //Global Variable to show empty shopping cart for the customer to put items in
 //Items will be added to this array as customers add them to the cart
 
@@ -38,16 +37,23 @@ var silverRing = new preMade("Custom Silver Wire Ring", 25);*/
 
 // draft of function to push premade items to the cart
 
-function pushToShoppingCart(name, price) {
+function preMadeCart(name, price) {
     var item = new preMade(name, price);
     shoppingCart.push(item);
     }
 
-for(var i=0; i<shoppingCart.length; i++){console.log(shoppingCart[i].name);}
+for (var i=0; i<shoppingCart.length; i++){console.log(shoppingCart[i].name);}
+
+
+document.getElementById("test").addEventListener("submit", function() {
+    preMadeCart("Aqua Cane Glass Earrings", 15);
+}, false);
+
 
 //Need function for having the person's custom ring photo to show up based
 //on form's input Switch statement for different photos
-function ringChoice(){
+/*function ringChoice(){*/
+
 	
 	//Need to append it to the HTML nodeName
 	//Coral gave me the following code
@@ -128,7 +134,7 @@ switch(ringWire,crystalColor){  
                  }
 				 
 				 */
-   }
+   
    //ringChoice();
 
 //Function for pulling Parameters from form GET request
@@ -220,14 +226,12 @@ function userInfo(){
 userInfo();
 
 // draft of function for validating form
-
 function validateForm() {
     var input1 = document.forms["customForm"] ["FirstName"].value;
     if (input1 == "") {
         alert("Please enter your first name");
         return false;
     }
- 
 }
 
 // draft of an object constructor for custom items
@@ -241,7 +245,7 @@ function customItem(size, wire, color) {
 //storing variables for items that customer has added to cart-keeping them as they continue to shop
 //As the customer adds items to the cart, then we will push that item to the array
 
-function addToShoppingCart(customItem, quantity) {
+function addToshoppingCart(customItem, quantity) {
     for (var i = 0; i < quantity; i++) {
          shoppingCart.push(customItem);
     }
