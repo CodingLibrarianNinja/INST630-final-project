@@ -1,7 +1,5 @@
 //INST630 Final Project-Stephani Moore/Rosie Yanosko
 //Sparkling Creations JavaScript Page
-var shoppingCart = []; //Global Variable to show empty shopping cart for the customer to put items in
-//Items will be added to this array as customers add them to the cart
 
 //Need function for having the person's custom ring photo to show up based
 //on form's input Switch statement for different photos
