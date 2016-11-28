@@ -179,7 +179,7 @@ userInfo();
 // draft of function for validating form
 function validateForm() {
     var input1 = document.forms["customForm"] ["FirstName"].value;
-    if (input1 == "") {
+    if (input1 === "") {
         alert("Please enter your first name");
         return false;
     }

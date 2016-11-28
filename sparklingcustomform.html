@@ -22,37 +22,55 @@
   <form name="customForm" action="sparklingringphoto.html" method="GET">
   <h2>Personal Information</h2>
   
-  <strong>First Name: </strong><input type="text" name="FirstName" size="22"> 
+  <strong>First Name: </strong><input type="text" name="FirstName" size="22" required> 
   <!-- This is super minor: I changed the size of the text boxes -->
   </br>
   </br>
-  <strong>Last Name: </strong><input type="text" name="LastName" size="22">
+  <strong>Last Name: </strong><input type="text" name="LastName" size="22" required>
   </br>
   </br>
-  <strong>Street Address: </strong><input type="text" name="StreetAddress" size='25'>
+  <strong>Street Address: </strong><input type="text" name="StreetAddress" size='25' required>
   </br>
   </br>
-  <strong>City: </strong><input type="text" name="City" size="22">
+  <strong>City: </strong><input type="text" name="City" size="22" required>
   </br>
   </br>
-  <strong>State/Province: </strong><input type="text" name="State" size="22">
+  <strong>State/Province: </strong><input type="text" name="State" size="22" required>
   </br>
   </br>
-  <strong>Zip Code: </strong><input type ="text" name="ZipCode" size="22">
+  <strong>Zip Code: </strong><input type ="number" name="ZipCode" size="22" required>
   </br>
   </br>
-  <strong>Country: </strong><input type="text" name="Country" size="22">
+  <strong>Country: </strong><input type="text" name="Country" size="22" required>
   </br>
   </br>
-  <strong>Email: </strong><input type="email" name="Email" size="22">
+  <strong>Email: </strong><input type="email" name="Email" size="22" required>
   
   <h2>Custom Ring Information</h2>
   <p>Note: If your ring size has a half in it, then just type the number out
   like this: 6.5</p>
   
-  <strong>Ring Size: </strong><input type="text" name="RingSize"></br>
-  </br>
- 
+  <strong>Ring Size: </strong><select name="RingSize" class=dropDown>
+      <option value="5">5</option>
+      <option value="5.5">5.5</option>
+      <option value="6">6</option>
+      <option value="6.5">6.5</option>
+      <option value="7">7</option>
+      <option value="7.5">7.5</option>
+      <option value="8">8</option>
+      <option value="8.5">8.5</option>
+      <option value="9">9</option>
+      <option value="9.5">9.5</option>
+      <option value="10">10</option>
+      <option value="10.5">10.5</option>
+      <option value="11">11</option>
+      <option value="11.5">11.5</option>
+      <option value="12">12</option>
+      <option value="12.5">12.5</option>
+      <option value="13">13</option>
+  </select>
+</br>
+</br> 
   <strong>Ring Wire: </strong><select name="RingWire" class=dropDown>
   
 	<option value="Silver">Silver Wire</option>
