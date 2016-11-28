@@ -1,4 +1,4 @@
-﻿INST630 Final Project-To Do List
+INST630 Final Project-To Do List
 
 
 General
@@ -24,18 +24,13 @@ HTML
 5) button id-add to HTML file and create variable similar to the Aqua earrings ones in JS file for rest of premade objects-DONE
 
 
-6) editing the buttons on Premade HTML file so that when you click on "Add to Cart" it takes you to the cart page with item information
-
+6) editing the buttons on Premade HTML file so that when you click on "Add to Cart" it takes you to the cart page with item information - Rosie
 
 
 CSS
 
-1)formatting the form
+1) Lighten background color
 
-2)need to find a better way to make the footer stick to the bottom of the page— do you want the shopping cart/homepage links to be included in the footer?
-
-3) Formatting the table-add borders
-4)Make drop down boxes on the menu bigger
 
 JavaScript
 
@@ -45,9 +40,6 @@ JavaScript
 3) form submission script-making information go to the order confirmation page
 4) Validating form information — Rosie
 
-
-
 Questions for Coral
 
 
-1) Incorporate responsive design?
