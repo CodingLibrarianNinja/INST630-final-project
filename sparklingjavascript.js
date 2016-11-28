@@ -178,9 +178,9 @@ userInfo();
 
 // draft of function for validating form
 function validateForm() {
-    var input1 = document.forms["customForm"] ["FirstName"].value;
-    if (input1 === "") {
-        alert("Please enter your first name");
+    var zip = document.forms["customForm"] ["ZipCode"].value.toString();
+        if (zip.length > 5 || zip.length < 5) {
+        alert("Invalid Zip Code");
         return false;
     }
 }
