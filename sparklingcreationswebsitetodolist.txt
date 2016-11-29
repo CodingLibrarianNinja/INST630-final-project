@@ -1,4 +1,4 @@
-INST630 Final Project-To Do List
+﻿INST630 Final Project-To Do List
 
 
 General
@@ -31,7 +31,7 @@ CSS
 
 1) Lighten background color
 
-
+-DONE
 JavaScript
 
 1) Need code for making different custom ring photos appear on that HTML page
