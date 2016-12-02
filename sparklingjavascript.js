@@ -99,9 +99,14 @@ function userInfo(){
 	  document.getElementById("State").textContent = state;
 	
 	var zipCode = GetURLParameter("ZipCode");
+    var zip = zipCode.toString();
+    
+    if (zip.length > 5 || zip.length < 5) {
+        alert("Invalid Zip Code");
+    } else {
+        document.getElementById("ZipCode").textContent = zipCode;
+    }
 	 
-	  document.getElementById("ZipCode").textContent = zipCode;
-  
 	var country = GetURLParameter("Country");
 	 
 	  document.getElementById("Country").textContent = country;
@@ -139,13 +144,13 @@ function userInfo(){
 
 userInfo();
 
-// draft of function for validating form
+/*
 function validateForm() {
     var zip = document.forms["customForm"] ["ZipCode"].value.toString();
-        if (zip.length > 5 || zip.length < 5) {
+    if (zip.length > 5 || zip.length < 5) {
         alert("Invalid Zip Code");
         return false;
     }
 }
-
+*/
 	

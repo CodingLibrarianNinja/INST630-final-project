@@ -1,6 +1,7 @@
 // Global Variable to show empty shopping cart for the customer to put items in
 // Items will be added to this array as customers add them to the cart
 var shoppingCart = []; 
+
 var i;
 
 // object constructor for premade jewelry items
@@ -44,44 +45,34 @@ function preMadeCart(name, price) {
 for (i=0; i<shoppingCart.length; i++){console.log(shoppingCart[i].name);}
 
 // draft of an object constructor for custom items
-function customItem(size, wire, color) {
+function customItem(size, wire, color, price) {
     this.size = size;
     this.wire = wire;
     this.color = color;
+    this.price = price;
 }
 
 // draft of a function for adding custom items to the cart
-function addToshoppingCart(customItem, quantity) {
-    for (i = 0; i < quantity; i++) {
-         shoppingCart.push(customItem);
-    }
+function addToshoppingCart(size, wire, color, price) {
+    var custom = new customItem(size, wire, color, price)     
+    shoppingCart.push(custom);
+    
+    // String type variable using the length of the cart as an iterator for identifying the objects values
+    var length = shoppingCart.length.toString();
+    
+    // saves the length of the cart and object's values to session storage for later retrieval
+    sessionStorage.setItem("size" + length, size);
+    sessionStorage.setItem("wire" + length, wire);
+    sessionStorage.setItem("color" + length, color);
+    sessionStorage.setItem("price" + length, price.toString());
 }
 
 // Need to create submit button with an event listener that confirms the order and e-mails it to 
 // sparklingcreationsjewelry@gmail.com
 
-
-/*var aquaPreMade = new preMade('Aqua Cane Glass Earrings', 15);
-
-var bluestripedPreMade = new preMade('Blue Striped Beaded Necklace', 40);
-
-var bluezirconPreMade = new preMade('Blue Zircon Wire Wrapped Bracelet', 25);
-
-var fireopalPreMade = new preMade('Fire Opal Silver Heart Pendant', 30);
-
-var nighttreePreMade = new preMade('Night Tree of Life Pendant', 35);
-
-var crystalheartPreMade = new preMade('Purple Swarovski Crystal Heart Earrings', 15);
-
-var redcoralPreMade = new preMade('Red and Pink Coral Beaded Necklace', 45);
-
-var summertreePreMade = new preMade('Summer Tree of Life Pendant', 35);
-
-var treeagatePreMade = new preMade('Tree Agate Gemstone Earrings with Green Swarovski Crystals', 18);
-
-var wintertreePremade = new preMade('Winter Tree of Life Pendant', 35);
-
-var copperRing = new preMade("Custom Copper Wire Ring", 15);
-
-var silverRing = new preMade("Custom Silver Wire Ring", 25);*/
-
+// Draft of a loop that writes the shopping cart array values to the cart page
+var table = document.getElementById("table1");
+for (i=0; i<shoppingCart.length; i++) {
+    table.innerHTML += "<tr><tr>" + shoppingCart[i].name + "</tr>";
+    table.innerHTML += "<tr>" + shoppingCart[i].price + "</tr></tr>";
+}
