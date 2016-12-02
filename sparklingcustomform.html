@@ -1,5 +1,5 @@
 <!--INST630 Final Project-Stephani Moore/Rosie Yanosko-->
-<!--Business Homepage-->
+<!--Custom Ring Form-->
 
 <!DOCTYPE HTML>
 <html>
@@ -8,6 +8,7 @@
 <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="sparklingcss.css">
   <script src="shoppingCart.js"></script>
+  <script src="sparklingjavascript.js"></script>
   </head>
   <body>
   <h1> Sparkling Creations Jewelry Custom Ring Form</h1>
@@ -15,10 +16,11 @@
   <p>Want your own unique wire wrapped ring?</p>
   <p>You can select from either silver or copper wire.</p>
   <p>Right now, you can choose from seven Swarovski crystal colors!</p>
-  <p>All silver rings are $25 and all copper rings are $15</p>
+  <p>All silver rings are $25 and all copper rings are $15.</p>
   <p>Just fill out the form below!</p>
   
-  <form name="customForm" action="sparklingringphoto.html" method="GET" onsubmit="validateForm()">
+  <form name="customForm" action="sparklingringphoto.html"  method="GET"
+  onsubmit="validateForm()">
   <h2>Personal Information</h2>
   
   <strong>First Name: </strong><input type="text" name="FirstName" size="22" required> 
@@ -71,7 +73,7 @@
   </select>
 </br>
 </br> 
-  <strong>Ring Wire: </strong><select name="RingWire" class=dropDown>
+  <strong>Ring Wire: </strong><select id="RingWire" name= "RingWire" class=dropDown>
   
 	<option value="Silver">Silver Wire</option>
 	<option value="Copper">Copper Wire</option>
@@ -80,7 +82,7 @@
 </br>
 </br>
 
-  <strong>Swarovski Crystal Color: </strong><select name="CrystalColor" class=dropDown>
+  <strong>Swarovski Crystal Color: </strong><select id="CrystalColor" name= "CrystalColor" class=dropDown>
 	
 	<option value="Black">Black</option>
 	<option value="Blue">Blue</option>
@@ -94,7 +96,7 @@
   
   <h2>Shipping/Payment Information</h2>
   
-  <strong>Preferred Delivery Method: </strong><select name="DeliveryMethod" class=dropDown>
+  <strong>Preferred Delivery Method: </strong><select name="DeliveryMethod" id="DeliveryMethod" class=dropDown>
   
 	<option value="In Person">In Person</option>
 	<option value="USPS">USPS</option>
@@ -103,7 +105,7 @@
 	</select>
 	</br>
 	</br>
-  <strong>Payment Method: </strong><select name="PaymentMethod" class=dropDown>
+  <strong>Payment Method: </strong><select name="PaymentMethod" id="PaymentMethod" class=dropDown>
   
 	<option value="Credit Card">Credit Card</option>
 	<option value="Paypal">PayPal</option>
