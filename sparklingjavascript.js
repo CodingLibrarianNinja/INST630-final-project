@@ -5,17 +5,19 @@
 //I want to declare variables using selections from the custom ring form
 
 
-var ringWire = document.getElementById("RingWire").innerHTML; 
+var ringWire; 
 
-var crystalColor = document.getElementById("CrystalColor").innerHTML;
+var crystalColor;
+
+
 
 //Need function for having the person's custom ring photo to show up based
 //on form's input Use if/else if statements
 function ringChoice(ringWire,crystalColor){
 	
-	//var ringWire = document.getElementById("RingWire").innerHTML; 
-
-//var crystalColor = document.getElementById("CrystalColor").innerHTML;
+	ringWire = GetURLParameter("RingWire");
+	
+	crystalColor = GetURLParameter("CrystalColor");
 
 	if(ringWire === "Copper" && crystalColor === "Purple"){
 		document.getElementById("ringPhoto").src = "images/purplecopperwirering.jpg";
@@ -51,20 +53,7 @@ function ringChoice(ringWire,crystalColor){
 		
 }
 
-ringChoice(ringWire,crystalColor);
-	
-   
-   //Need to append it to the HTML nodeName
-	//Coral gave me the following code
-	/*
-	var elem = document.createElement("img");
- elem.setAttribute("src", "images/img1.jpg");
- elem.setAttribute("height", "300");
- elem.setAttribute("width", "400");
- elem.setAttribute("alt", "Purple stone");
- document.getElementById("placehere").appendChild(elem);
-
-*/
+ringChoice();
 
 
 //Function for pulling Parameters from form GET request
@@ -77,8 +66,10 @@ function GetURLParameter(sParam) {
         var sParameterName = sURLVariables[i].split("=");
         if (sParameterName[0] == sParam)
         {
-            return sParameterName[1].replace("+", " ");
-        }
+           var whatever = sParameterName[1].replace(/\+/g, " "); 
+			return whatever.replace("%40", "@");
+			
+        } 
     }
 }
  
@@ -118,7 +109,7 @@ function userInfo(){
 	var email = GetURLParameter("Email");
 	 
 	  document.getElementById("Email").textContent = email;
-  
+	  
 	var ringSize = GetURLParameter("RingSize");
 	 
 	  document.getElementById("RingSize").textContent = ringSize;
