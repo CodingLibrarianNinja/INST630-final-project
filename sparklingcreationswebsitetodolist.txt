@@ -7,7 +7,7 @@ General
 
 HTML
 
-1) Images-need to take pictures of the following rings:-DONE
+1) Images-need to take pictures of the following rings:-DONE (Stephani)
 	-Blue Silver Ring
 	-Black Copper Ring
 	-Green Silver Ring
@@ -15,30 +15,36 @@ HTML
 	-Pink Copper Ring
 	-Purple Copper Ring
 	-Red Copper Ring
-2) Upload ring photos-DONE
+2) Upload ring photos-DONE (Stephani)
 
-3) change form to click on just ONE button, not all of them-DONE
-4)change Zip Code and Ring Size input to text
+3) change form to click on just ONE button, not all of them-DONE (Rosie)
+4)change Zip Code and Ring Size input to text-DONE (Rosie)
+5) Move customer personal information from custom ring form to checkout HTML file-DONE (Stephani)
 
 -DONE 
-5) button id-add to HTML file and create variable similar to the Aqua earrings ones in JS file for rest of premade objects-DONE
+5) button id-add to HTML file and create variable similar to the Aqua earrings ones in JS file for rest of premade objects-DONE (Rosie)
 
 
-6) editing the buttons on Premade HTML file so that when you click on "Add to Cart" it takes you to the cart page with item information - Rosie
+6) editing the buttons on Premade HTML file so that when you click on "Add to Cart" it takes you to the cart page with item information - DONE Rosie
 
 
 CSS
 
-1) Lighten background color
+1) Lighten background color-DONE (Stephani)
 
 -DONE
 JavaScript
 
-1) Need code for making different custom ring photos appear on that HTML page
+1) Need code for making different custom ring photos appear on that HTML page-DONE (Stephani)
 2) Have button on Available Pieces page that adds an item to the cart with corresponding object information on it- Add Element by Node
-(want to add a line for each item added to the cart with the information for the item.)
-3) form submission script-making information go to the order confirmation page
-4) Validating form information — Rosie
+(want to add a line for each item added to the cart with the information for the item.) DONE (Rosie)
+3) form submission script-making information go to the order confirmation page-DONE (Stephani)
+4) Validating form information — DONE (Rosie)
+5) Adding all of the prices in the corresponding column to get a grand total
+6) Adding items to cart so that they are on different lines
+7) Have information from cart page show up on order confirmation page
+8) Have all information from order confirmation page (items/customer's personal information) be e-mailed to sparklingcreationsjewelry@gmail.com
+9) When you are adding custom ring item to cart, it will correctly put the correct price corresponding to whether the wire is silver or copper
 
 Questions for Coral
 
