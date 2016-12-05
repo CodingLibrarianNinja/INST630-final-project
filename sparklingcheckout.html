@@ -1,5 +1,5 @@
 <!--INST630 Final Project-Stephani Moore/Rosie Yanosko-->
-<!--Business Homepage-->
+<!--Order Confirmation-->
 
 <!DOCTYPE HTML>
 <html>
@@ -15,28 +15,86 @@
   <p>Here are your items for purchase.</p>
   <p>If you want to add more pieces to your cart, then click on the links</p>
   
-  <p>Otherwise click on the confirm button to submit your jewelry order.</p>
+  <p>Otherwise click on the confirm button to submit your jewelry order once
+  you have filled out your information in the form for shipping/payment.</p>
   
   <!--Order information here-->
   <!--List of all items for purchase.  It would look nice as a table
   with Jewelry Piece, Amount, Quanitity.  Total Cost, Shipping Cost,
   Grand Total on bottom right-->
   <table>
+  <caption>Shopping Cart</caption>
+  <tbody>
   <tr>
   <th>Jewelry Piece</th>
-  <th>Cost</th>
+  <th id ="Price">Cost</th>
   
   </tr>
   <td></td>
   <td></td>
   <td></td>
+  </tbody>
   </table>
   
-  <p>Grand Total:</p>
+  <p>Grand Total: $<span id="GrandTotal"></span></p>
   
+  <!--Add link to send e-mail-->
   
-  <form action="action_page.php" method="get">
-  <input type="submit" value="Submit Custom Ring Order">
+  <form action="mailto: sparklingcreationsjewelry@gmail.com" method="get">
+  
+  <h2>Personal Information</h2>
+  
+  <strong>First Name: </strong><input type="text" name="FirstName" size="22" required> 
+  <!-- This is super minor: I changed the size of the text boxes -->
+  </br>
+  </br>
+  <strong>Last Name: </strong><input type="text" name="LastName" size="22" required>
+  </br>
+  </br>
+  <strong>Street Address: </strong><input type="text" name="StreetAddress" size='25' required>
+  </br>
+  </br>
+  <strong>City: </strong><input type="text" name="City" size="22" required>
+  </br>
+  </br>
+  <strong>State/Province: </strong><input type="text" name="State" size="22" required>
+  </br>
+  </br>
+  <strong>Zip Code: </strong><input type="number" name="ZipCode" size="22" required>
+  </br>
+  </br>
+  <strong>Country: </strong><input type="text" name="Country" size="22" required>
+  </br>
+  </br>
+  <strong>Email: </strong><input type="email" name="Email" size="22" required>
+  
+  <h2>Shipping/Payment Information</h2>
+  
+  <strong>Preferred Delivery Method: </strong><select name="DeliveryMethod" id="DeliveryMethod" class=dropDown>
+  
+	<option value="In Person">In Person</option>
+	<option value="USPS">USPS</option>
+	<option value="FedEx">FedEx</option>
+	<option value="UPS">UPS</option>
+	</select>
+	</br>
+	</br>
+  <strong>Payment Method: </strong><select name="PaymentMethod" id="PaymentMethod" class=dropDown>
+  
+	<option value="Credit Card">Credit Card</option>
+	<option value="Paypal">PayPal</option>
+	<option value="Electronic Check">Electronic Check</option>
+	</select>
+	</br>
+ 
+  
+  <h2>Any Additional Information?</h2>
+  <textarea type="text" name="AdditionalInfo">If you have a special request, then type it here</textarea>
+  </br>
+  </br>
+  <input type="submit" value="Submit Jewelry Order">
+  <input type="reset">
+  </form>
  
   <p class=footer>
   <a href="sparklinghomepage.html"> Business Homepage</a>
