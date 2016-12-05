@@ -8,7 +8,6 @@
 <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="sparklingcss.css">
   <script src="shoppingCart.js"></script>
-  <script src="sparklingjavascript.js"></script>
   </head>
   <body>
   <h1> Ring Photo</h1>
@@ -20,25 +19,6 @@
   
   <h2>Custom Ring Order Form Information</h2>
   
-  
-  <h2>Personal Information</h2>
-  
-  <p><strong>First Name: </strong><span id="FirstName"></span></p> <!--Information from form-->
-  
-  <p><strong>Last Name: </strong><span id="LastName"></span></p>
-  
-  <p><strong>Street Address: </strong><span id="StreetAddress"></span> </p>
-  
-  <p><strong>City: </strong><span id="City"></span></p>
-  
-  <p><strong>State/Province: </strong><span id="State"></span></p>
-  
-  <p><strong>Zip Code: </strong><span id="ZipCode"></span></p>
-  
-  <p><strong>Country: </strong><span id="Country"></span></p>
-  
-  <p><strong>Email: </strong><span id="Email"></span</p>
-  
   <h2>Custom Ring Information</h2>
  
   <p><strong>Ring Size: </strong><span id="RingSize"></span></p> 
@@ -47,33 +27,26 @@
   
   <p><strong>Swarovski Crystal Color: </strong><span id ="CrystalColor"></span></p>
   
-  <h2>Shipping/Payment Information</h2>
-  
-  <p><strong>Preferred Delivery Method: </strong><span id="DeliveryMethod"></span></p>
-  
-  <p><strong>Payment Method: </strong><span id="PaymentMethod"></span></p>
-  
-  <p><strong>Any Additional Information? </strong><span id="AdditionalInfo"></span></p>
-  
-  
+  </br>
   
   <p>The photo doesn't match your vision for an ideal ring? You mistyped some information?  Click on the link to go back to the form and try again.</p>
 
-      <a href="sparklingcustomform.html">Go back to the Form</a>
+      <a id= "ringform" href="sparklingcustomform.html">Go back to the Form</a> <!--Can this link have a border around it?-->
       </br>
       </br>
   <p>Otherwise, click on the button to add this ring order to the cart.</p>
   
-  <form action="sparklingcart.html" method="GET">
-  <input type="submit" value="Submit Custom Ring Order">
-  </form>
+
+  
+  <button id="ring" onclick="addToshoppingCart(ringWire, ringSize, crystalColor, 15); location.href='sparklingcart.html'"> Add to Cart
+</button>
  
   <p class=footer>      
   <a href="sparklinghomepage.html"> Business Homepage</a> &nbsp;
   <a href="sparklingcart.html"> Your Cart</a>
       </p>
        
-      <script src="sparklingjavascript.js"></script>
+      <script src="sparklingring.js"></script>
     
   </body>
   
