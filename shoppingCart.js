@@ -53,26 +53,34 @@ function customItem(size, wire, color, price) {
 }
 
 // draft of a function for adding custom items to the cart
-function addToshoppingCart(size, wire, color, price) {
-    var custom = new customItem(size, wire, color, price)     
+function addToshoppingCart() {
+    var size = GetURLParameter("RingSize");
+    var wire = GetURLParameter("RingWire");
+    var color = GetURLParameter("CrystalColor");
+    var price;
+    if (wire === "Copper"){
+        price = 15;
+    } else {
+        price = 25;
+    }
+    
+    var custom = new customItem(size, wire, color, price);     
     shoppingCart.push(custom);
     
     // String type variable using the length of the cart as an iterator for identifying the objects values
     var length = shoppingCart.length.toString();
+    var name = ("Custom Ring Size: " + size + " Wire: " + wire + " Swarovski Crystal Color: " + color);
     
     // saves the length of the cart and object's values to session storage for later retrieval
-    sessionStorage.setItem("size" + length, size);
-    sessionStorage.setItem("wire" + length, wire);
-    sessionStorage.setItem("color" + length, color);
+    sessionStorage.setItem("length", length);
+    sessionStorage.setItem("name" + length, name);
     sessionStorage.setItem("price" + length, price.toString());
 }
 
-// Need to create submit button with an event listener that confirms the order and e-mails it to 
-// sparklingcreationsjewelry@gmail.com
-
 // Draft of a loop that writes the shopping cart array values to the cart page
-var table = document.getElementById("table1");
-for (i=0; i<shoppingCart.length; i++) {
-    table.innerHTML += "<tr><tr>" + shoppingCart[i].name + "</tr>";
-    table.innerHTML += "<tr>" + shoppingCart[i].price + "</tr></tr>";
+var table = document.getElementById("table");
+if(table != undefined) {
+    for (i=0; i<shoppingCart.length; i++) {
+        table.innerHTML += "<tr><td>" + shoppingCart[i].name + "</td><td>" + "$" + shoppingCart[i].price + "</td></tr>";
+    }
 }

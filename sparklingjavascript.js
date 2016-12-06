@@ -26,6 +26,8 @@ function GetURLParameter(sParam) {
 //Function for displaying form information from user
 
 function userInfo(){
+    var complete = false;
+    
 	var firstName = GetURLParameter("FirstName");
 	 
 	 document.getElementById("FirstName").textContent = firstName;
@@ -53,6 +55,7 @@ function userInfo(){
         alert("Invalid Zip Code");
     } else {
         document.getElementById("ZipCode").textContent = zipCode;
+        complete = true;
     }
 	 
 	var country = GetURLParameter("Country");
@@ -61,7 +64,7 @@ function userInfo(){
   
 	var email = GetURLParameter("Email");
 	 
-	  document.getElementById("Email").textContent = email; */
+	  document.getElementById("Email").textContent = email;
 	  
   
 	var deliveryMethod = GetURLParameter("DeliveryMethod");
@@ -75,7 +78,6 @@ function userInfo(){
 	var additionalInfo = GetURLParameter("AdditionalInfo");
 	 
 	  document.getElementById("AdditionalInfo").textContent = additionalInfo; 
-  
 	
 }
 

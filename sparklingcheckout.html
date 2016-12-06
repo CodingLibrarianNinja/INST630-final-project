@@ -7,7 +7,6 @@
 <title>Order Confirmation/Checkout</title>
 <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="sparklingcss.css">
-  
   </head>
   <body>
   <h1>Order Confirmation</h1>
@@ -22,25 +21,20 @@
   <!--List of all items for purchase.  It would look nice as a table
   with Jewelry Piece, Amount, Quanitity.  Total Cost, Shipping Cost,
   Grand Total on bottom right-->
-  <table>
+ <table id="table">
   <caption>Shopping Cart</caption>
-  <tbody>
-  <tr>
-  <th>Jewelry Piece</th>
-  <th id ="Price">Cost</th>
   
+  <tr>
+  <th id="name">Jewelry Piece</th>
+  <th id="price">Cost</th>
   </tr>
-  <td></td>
-  <td></td>
-  <td></td>
-  </tbody>
-  </table>
+ </table>
   
   <p>Grand Total: $<span id="GrandTotal"></span></p>
   
   <!--Add link to send e-mail-->
   
-  <form action="mailto: sparklingcreationsjewelry@gmail.com" method="get">
+  <form action="mailto: sparklingcreationsjewelry@gmail.com" method="get" >
   
   <h2>Personal Information</h2>
   
@@ -92,7 +86,7 @@
   <textarea type="text" name="AdditionalInfo">If you have a special request, then type it here</textarea>
   </br>
   </br>
-  <input type="submit" value="Submit Jewelry Order">
+  <input type="submit" value="Submit Jewelry Order" onclick="location.href='sparklingordercomplete.html'">
   <input type="reset">
   </form>
  
@@ -101,6 +95,7 @@
   </p>
 
   <script src="shoppingCart.js"></script>
+<script src="validateForm.js"></script>
   </body>
   
   

@@ -17,21 +17,20 @@
   with Jewelry Piece, Amount, Quanitity.  Total Cost, Shipping Cost,
   Grand Total on bottom right-->
  <!--Will need to use value AddElementByNode to add an item each time-->
- <table>
+ <table id="table">
   <tr>
-  <th>Jewelry Piece</th>
-  <th>Cost</th>
-  
+  <th id="name">Jewelry Piece</th>
+  <th id="price">Cost</th>
   </tr>
-  <td id="table1"></td>
-  <td></td>
-  <td></td>
-  </table>
+</table>
   
   <!--Amount will always be $5 Need to automatically add to adding function-->
   <p>Shipping and Handling: </p>
   <p>Grand Total: </p>
   </br> 
+    
+  <input type="submit" value="Proceed to Checkout" onclick="location.href='sparklingcheckout.html'">
+    
   <p class=footer>
   <a href="sparklinghomepage.html"> Business Homepage</a> &nbsp;      
   <a href="sparklingpremade.html"> Available Jewelry Pieces</a> &nbsp;
