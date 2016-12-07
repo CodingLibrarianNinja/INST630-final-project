@@ -16,7 +16,8 @@
   
   <p>Otherwise click on the confirm button to submit your jewelry order once
   you have filled out your information in the form for shipping/payment.</p>
-  
+  <form name="finalorder" action="mailto: sparklingcreationsjewelry@gmail.com?subject=Your Sparkling Creations Jewelry Order" 
+  enctype="text/plain" method="POST" >
   <!--Order information here-->
   <!--List of all items for purchase.  It would look nice as a table
   with Jewelry Piece, Amount, Quanitity.  Total Cost, Shipping Cost,
@@ -29,17 +30,14 @@
   <th id="price">Cost</th>
   </tr>
  </table>
-  
+  <p>Shipping and Handling: $5 </p>
   <p>Grand Total: $<span id="GrandTotal"></span></p>
   
   <!--Add link to send e-mail-->
-  
-  <form action="mailto: sparklingcreationsjewelry@gmail.com" method="get" >
-  
+      
   <h2>Personal Information</h2>
   
   <strong>First Name: </strong><input type="text" name="FirstName" size="22" required> 
-  <!-- This is super minor: I changed the size of the text boxes -->
   </br>
   </br>
   <strong>Last Name: </strong><input type="text" name="LastName" size="22" required>
@@ -86,7 +84,7 @@
   <textarea type="text" name="AdditionalInfo">If you have a special request, then type it here</textarea>
   </br>
   </br>
-  <input type="submit" value="Submit Jewelry Order" onclick="location.href='sparklingordercomplete.html'">
+  <input type="submit" value="Submit Jewelry Order" onsubmit="location.href='sparklingordercomplete.html'">
   <input type="reset">
   </form>
  
@@ -95,7 +93,7 @@
   </p>
 
   <script src="shoppingCart.js"></script>
-<script src="validateForm.js"></script>
+  <script src="validateForm.js"></script>
   </body>
   
   
