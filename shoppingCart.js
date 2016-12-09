@@ -91,7 +91,7 @@ for (i=0; i<shoppingCart.length; i++){
     total += shoppingCart[0].price;
 }
     
-document.getElementById("GrandTotal").innerHTML = "Grand Total: $" + (total + 5);
+document.getElementById("GrandTotal").innerHTML = "" + (total + 5);
 
 // adding array to email
 
