@@ -67,7 +67,7 @@ function addToshoppingCart() {
     var custom = new customItem(size, wire, color, price);     
     shoppingCart.push(custom);
     
-    // String type variable using the length of the cart as an iterator for identifying the objects values
+    // string type variable using the length of the cart as an iterator for identifying the objects values
     var length = shoppingCart.length.toString();
     var name = ("Custom Ring Size: " + size + " Wire: " + wire + " Swarovski Crystal Color: " + color);
     
@@ -77,10 +77,22 @@ function addToshoppingCart() {
     sessionStorage.setItem("price" + length, price.toString());
 }
 
-// Draft of a loop that writes the shopping cart array values to the cart page
+// loop that writes the shopping cart array values to the cart page
 var table = document.getElementById("table");
 if(table != undefined) {
     for (i=0; i<shoppingCart.length; i++) {
         table.innerHTML += "<tr><td>" + shoppingCart[i].name + "</td><td>" + "$" + shoppingCart[i].price + "</td></tr>";
     }
 }
+
+// function that adds item prices in the cart
+var total = 0;    
+for (i=0; i<shoppingCart.length; i++){
+    total += shoppingCart[0].price;
+}
+    
+document.getElementById("GrandTotal").innerHTML = "Grand Total: $" + (total + 5);
+
+// adding array to email
+
+var arrayField = document.querySelector("[name=jsArray]")

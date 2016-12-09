@@ -21,9 +21,7 @@
   <form name="finalorder" action="mailto: sparklingcreationsjewelry@gmail.com?subject=Your Sparkling Creations Jewelry Order" 
   enctype="text/plain" method="POST" >
   <!--Order information here-->
-  <!--List of all items for purchase.  It would look nice as a table
-  with Jewelry Piece, Amount, Quanitity.  Total Cost, Shipping Cost,
-  Grand Total on bottom right-->
+  <!--List of all items for purchase-->
  <table id="table">
 	 <caption><strong>Shopping Cart</strong></caption>
   
@@ -32,6 +30,7 @@
 	  <th id="price"><strong>Cost</strong></th>
   </tr>
  </table>
+      
 	  <p><strong>Shipping and Handling:</strong> $5 </p>
 	  <p><strong>Grand Total:</strong> $<span id="GrandTotal"></span></p>
   
@@ -61,7 +60,8 @@
   </br>
   </br>
   <strong>Email: </strong><input type="email" name="Email" size="22" required>
-  
+  <input type="hidden" name="jsArray" ></input>
+   
   <h2>Shipping/Payment Information</h2>
   
   <strong>Preferred Delivery Method: </strong><select name="DeliveryMethod" id="DeliveryMethod" class=dropDown>
