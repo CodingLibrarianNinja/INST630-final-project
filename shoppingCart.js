@@ -94,5 +94,8 @@ for (i=0; i<shoppingCart.length; i++){
 document.getElementById("GrandTotal").innerHTML = "" + (total + 5);
 
 // adding array to email
+var array = document.getElementById("cartInfo");
 
-var arrayField = document.querySelector("[name=jsArray]")
+for(i=0; i<shoppingCart.length; i++) {
+    array.innerHTML += shoppingCart[i].name + "</br>";
+} 
