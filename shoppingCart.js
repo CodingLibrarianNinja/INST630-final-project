@@ -67,7 +67,7 @@ function addToshoppingCart() {
     var custom = new customItem(size, wire, color, price);     
     shoppingCart.push(custom);
     
-    // string type variable using the length of the cart as an iterator for identifying the objects values
+    // string type variable using the length of the cart as an iterator for identifying the object's values
     var length = shoppingCart.length.toString();
     var name = ("Custom Ring Size: " + size + " Wire: " + wire + " Swarovski Crystal Color: " + color);
     
@@ -93,9 +93,11 @@ for (i=0; i<shoppingCart.length; i++){
     
 document.getElementById("GrandTotal").innerHTML = "" + (total + 5);
 
-// adding array to email
-var array = document.getElementById("cartInfo");
-
-for(i=0; i<shoppingCart.length; i++) {
-    array.innerHTML += shoppingCart[i].name + "</br>";
+// adding shoppingCart value to email
+function emailCart() {
+    var contents = document.getElementById("cartInfo");
+    for(i=0; i<shoppingCart.length; i++) {
+    contents.value += shoppingCart[i].name + ", ";
 } 
+    
+}
