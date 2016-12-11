@@ -88,7 +88,7 @@ if(table != undefined) {
 // function that adds item prices in the cart
 var total = 0;    
 for (i=0; i<shoppingCart.length; i++){
-    total += shoppingCart[0].price;
+    total += shoppingCart[i].price;
 }
     
 document.getElementById("GrandTotal").innerHTML = "" + (total + 5);
